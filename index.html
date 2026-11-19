@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="iuh8dFsTnEfzxRu78CnIYAKTvX0YRVyugqsuEaUkDzA" />
+<title>Hemant Kumar | Electronics Engineer, creator of Nancy AI and Rose AI</title>
+<meta name="description" content="Hemant Kumar is an electronics engineer who builds Nancy AI for blind people, Rose AI for object detection and face recognition, AI Trainer and Room Drive. Completed courses in PCB design and VLSI.">
+<link rel="canonical" href="https://hemantkumar71002-del.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Hemant Kumar | Electronics Engineer, creator of Nancy AI and Rose AI">
+<meta property="og:description" content="Electronics engineer building Nancy AI, Rose AI, AI Trainer and Room Drive.">
+<meta property="og:url" content="https://hemantkumar71002-del.github.io/">
+<meta property="og:image" content="https://hemantkumar71002-del.github.io/hemant-kumar.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Hemant Kumar",
+  "jobTitle": "Electronics Engineer",
+  "knowsAbout": ["Electronics", "Embedded systems", "IoT", "PCB design", "VLSI", "Python", "HTML"],
+  "description": "Electronics engineer and creator of Nancy AI, Rose AI, AI Trainer and Room Drive.",
+  "url": "https://hemantkumar71002-del.github.io/",
+  "image": "https://hemantkumar71002-del.github.io/hemant-kumar.jpg",
+  "sameAs": [
+    "https://github.com/hemantkumar71002-del"
+  ]
+}
+</script>
+
+<style>
+:root{
+  --bg:#EEF2F3; --ink:#12202B; --muted:#4B5C68; --line:#B9C5CB;
+  --accent:#0A7C86; --card:#FFFFFF;
+  --grid:rgba(10,124,134,.09); --glow:rgba(10,124,134,.16);
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0F1A22; --ink:#E6EEF1; --muted:#9DB0BB; --line:#2C3D49; --accent:#43C3CE; --card:#16252F;
+    --grid:rgba(67,195,206,.07); --glow:rgba(67,195,206,.14);}
+}
+.small{font-size:.95rem;color:var(--muted);margin:1.25rem 0 0}
+.btn{display:table;background:var(--accent);color:var(--bg);font:600 1rem "Bricolage Grotesque",sans-serif;
+  padding:.6rem 1.1rem;border-radius:6px;text-decoration:none;margin:0 0 .9rem}
+.btn:hover{filter:brightness(1.1)}
+.btn:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);font:400 1.0625rem/1.65 "IBM Plex Sans",system-ui,sans-serif;
+  background-color:var(--bg);
+  background-image:
+    radial-gradient(60rem 30rem at 10% -5%,var(--glow),transparent 70%),
+    linear-gradient(var(--grid) 1px,transparent 1px),
+    linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:auto,32px 32px,32px 32px;
+  background-attachment:fixed}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.5rem}
+header{padding:4rem 0 2rem}
+.top{display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap}
+.photo{width:6.5rem;height:6.5rem;border-radius:50%;object-fit:cover;background:var(--line);border:2px solid var(--accent)}
+h1{font:800 clamp(2.8rem,9vw,6.5rem)/0.95 "Bricolage Grotesque",sans-serif;letter-spacing:-0.03em;margin:0}
+.role{font:600 1.25rem "Bricolage Grotesque",sans-serif;margin:.75rem 0 0;color:var(--accent)}
+.intro{max-width:38rem;color:var(--muted);margin:1.25rem 0 0}
+
+/* the one memorable thing: a circuit trace joining the name to the projects */
+.trace{display:block;width:100%;height:5rem;margin-top:1rem}
+.trace path{fill:none;stroke:var(--accent);stroke-width:2;stroke-dasharray:6 0}
+.trace circle{fill:var(--bg);stroke:var(--accent);stroke-width:2}
+@media (prefers-reduced-motion:no-preference){
+  .trace path{stroke-dasharray:1200;stroke-dashoffset:1200;animation:draw 2.2s ease-out .2s forwards}
+  @keyframes draw{to{stroke-dashoffset:0}}
+}
+
+h2{font:800 1.75rem "Bricolage Grotesque",sans-serif;margin:0 0 1.25rem}
+.projects{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr))}
+.project{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:1.5rem}
+.project h3{font:600 1.35rem "Bricolage Grotesque",sans-serif;margin:0 0 .5rem}
+.project p{margin:0 0 1rem;color:var(--muted)}
+section{padding:1.5rem 0 3rem}
+.links{display:flex;gap:1.25rem;flex-wrap:wrap;padding:0;margin:0;list-style:none}
+footer{border-top:1px solid var(--line);padding:1.5rem 0 3rem;color:var(--muted);font-size:.95rem}
+
+.codebox{background:var(--card);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.codebar{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.6rem 1rem;border-bottom:1px solid var(--line)}
+.codebar span{font:600 .95rem "Bricolage Grotesque",sans-serif;color:var(--muted)}
+.copybtn{background:var(--accent);color:var(--bg);border:0;border-radius:6px;font:600 .95rem "Bricolage Grotesque",sans-serif;padding:.45rem 1rem;cursor:pointer}
+.copybtn:hover{filter:brightness(1.1)}
+.copybtn:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+pre.code{margin:0;padding:1rem;max-height:28rem;overflow:auto;font:400 .85rem/1.5 ui-monospace,Menlo,Consolas,monospace;color:var(--ink);tab-size:2}
+
+button.btn{border:0;cursor:pointer}
+#espbox{margin-top:.5rem}
+#espbox[hidden]{display:none}
+#espbox h4{font:600 1.1rem "Bricolage Grotesque",sans-serif;margin:1rem 0 .5rem}
+.wiring{width:100%;border-collapse:collapse;font-size:.95rem;margin:0 0 1rem}
+.wiring th,.wiring td{text-align:left;padding:.4rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+.wiring th{color:var(--muted);font-weight:600}
+.project.wide{grid-column:1/-1}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="top">
+      <img class="photo" src="hemant-kumar.jpg" alt="Photo of Hemant Kumar" width="104" height="104">
+      <div>
+        <h1>Hemant Kumar</h1>
+        <p class="role">Electronics Engineer</p>
+      </div>
+    </div>
+    <p class="intro">I design electronics and build software around it. My projects include Nancy AI, an assistant for blind people, Rose AI for object detection and face recognition, an AI image trainer, and Room Drive, a shared file app for teams and organisations.</p>
+    <p class="small"><a href="https://github.com/hemantkumar71002-del" rel="me">github.com/hemantkumar71002-del</a></p>
+    <svg class="trace" viewBox="0 0 1000 80" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 10 H160 L200 50 H500 L540 20 H840 L880 60 H1000"/>
+      <circle cx="200" cy="50" r="6"/><circle cx="540" cy="20" r="6"/><circle cx="880" cy="60" r="6"/>
+    </svg>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="about">
+    <h2>About me</h2>
+    <p>I am an electronics engineer. I like the place where hardware meets software: circuits and sensors on one side, apps and AI on the other. I learn by building things I can test on real devices, from sensor boards to Android apps.</p>
+    <p>My main areas are embedded systems, IoT, PCB design and AI that runs on the device itself. My projects are made to be useful for real people: Nancy AI for blind users, Rose AI for detecting objects and recognising faces, and Room Drive for teams and organisations.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <article class="project">
+        <h3>Nancy AI</h3>
+        <p>An Android app made for blind and low-vision people. The camera detects objects and speaks their direction, name and distance. It recognises familiar faces, so you know who is in front of you. You control everything by voice, so no screen is needed, and it works offline. It is a helping tool and does not replace a white cane or a guide.</p>
+        <a class="btn" href="https://github.com/hemantkumar71002-del/Nancy-Ai-assistant-/releases/download/v1.0/Nancy-AI-Assistant.apk">Download APK</a>
+      </article>
+      <article class="project">
+        <h3>Rose AI</h3>
+        <p>An Android app for object detection and face recognition. The camera finds objects and faces and speaks what it sees, and you can use voice commands. It can also connect to an ESP32 board over Bluetooth. The first launch needs internet to load the AI models. The source code is open on GitHub.</p>
+        <a class="btn" href="https://github.com/hemantkumar71002-del/Rose-ai/releases/download/v1.0/Rose-AI.apk">Download APK</a>
+        <a href="https://github.com/hemantkumar71002-del/Rose-ai">Rose AI on GitHub</a>
+        <button type="button" class="btn" id="esptoggle" aria-expanded="false" aria-controls="espbox" style="margin-top:.9rem">ESP32 code for Rose AI</button>
+        <div id="espbox" hidden>
+          <p>ESP32 with push buttons and an HC-SR04 ultrasonic sensor. It sends button presses and distance to the Rose AI app over Bluetooth (BLE).</p>
+          <h4>Connections</h4>
+          <table class="wiring">
+            <tr><th>Part</th><th>Pin</th><th>ESP32</th></tr>
+            <tr><td>HC-SR04</td><td>VCC</td><td>5V (VIN)</td></tr>
+            <tr><td>HC-SR04</td><td>GND</td><td>GND</td></tr>
+            <tr><td>HC-SR04</td><td>TRIG</td><td>GPIO 5</td></tr>
+            <tr><td>HC-SR04</td><td>ECHO</td><td>GPIO 18 (through voltage divider)</td></tr>
+            <tr><td>Camera button</td><td>one leg</td><td>GPIO 27</td></tr>
+            <tr><td>Voice button</td><td>one leg</td><td>GPIO 13</td></tr>
+            <tr><td>Mic button</td><td>one leg</td><td>GPIO 14</td></tr>
+            <tr><td>SOS button</td><td>one leg</td><td>GPIO 25</td></tr>
+            <tr><td>All buttons</td><td>other leg</td><td>GND</td></tr>
+          </table>
+          <p class="small">The ECHO pin gives 5V but the ESP32 pins take 3.3V. Put a 1k resistor from ECHO to GPIO 18 and a 2k resistor from GPIO 18 to GND. The buttons use the internal pull-up, so they need no resistor.</p>
+          <div class="codebox">
+            <div class="codebar"><span>esp32_rose.ino</span><button type="button" class="copybtn" id="copybtn">Copy code</button></div>
+            <pre class="code"><code id="espcode">#include &lt;Arduino.h&gt;
+#include &lt;BLEDevice.h&gt;
+#include &lt;BLEServer.h&gt;
+#include &lt;BLEUtils.h&gt;
+#include &lt;BLE2902.h&gt;
+
+#define DEVICE_NAME "ESP32_Object_Detector"
+#define SERVICE_UUID        "4fafc201-1fb5-459e-8fcc-c5c9c331914b"
+#define CHARACTERISTIC_UUID "beb5483e-36e1-4688-b7f5-ea07361b26a8"
+
+// Ultrasonic HC-SR04
+#define TRIG_PIN 5
+#define ECHO_PIN 18
+
+// Push buttons (one side to GPIO, other side to GND)
+#define BTN_CAMERA 27
+#define BTN_VOICE  13
+#define BTN_MIC    14
+#define BTN_SOS    25
+
+BLECharacteristic *pCharacteristic = nullptr;
+bool deviceConnected = false;
+unsigned long lastDistanceTime = 0;
+const unsigned long DISTANCE_INTERVAL = 500;
+
+struct Button {
+  int pin;
+  const char *command;
+  int lastReading;
+  int stableState;
+  unsigned long lastChange;
+};
+
+Button buttons[] = {
+  {BTN_CAMERA, "BTN:CAM",   HIGH, HIGH, 0},
+  {BTN_VOICE,  "BTN:VOICE", HIGH, HIGH, 0},
+  {BTN_MIC,    "BTN:MIC",   HIGH, HIGH, 0},
+  {BTN_SOS,    "BTN:SOS",   HIGH, HIGH, 0}
+};
+const int BUTTON_COUNT = sizeof(buttons) / sizeof(buttons[0]);
+
+void sendBLE(String message) {
+  if (!deviceConnected || pCharacteristic == nullptr) return;
+  pCharacteristic-&gt;setValue(message.c_str());
+  pCharacteristic-&gt;notify();
+  Serial.println("BLE sent: " + message);
+}
+
+float readDistanceCM() {
+  digitalWrite(TRIG_PIN, LOW);
+  delayMicroseconds(3);
+  digitalWrite(TRIG_PIN, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(TRIG_PIN, LOW);
+  unsigned long duration = pulseIn(ECHO_PIN, HIGH, 30000);
+  if (duration == 0) return -1;
+  return duration * 0.0343 / 2.0;
+}
+
+void checkUltrasonic() {
+  if (millis() - lastDistanceTime &lt; DISTANCE_INTERVAL) return;
+  lastDistanceTime = millis();
+
+  float distance = readDistanceCM();
+  if (distance &gt; 0 &amp;&amp; distance &lt;= 400) {
+    sendBLE("DIST:" + String((int)round(distance)));
+    Serial.print("Distance: ");
+    Serial.print(distance);
+    Serial.println(" cm");
+  } else {
+    sendBLE("DIST:NONE");
+    Serial.println("Distance: out of range");
+  }
+}
+
+void checkButtons() {
+  for (int i = 0; i &lt; BUTTON_COUNT; i++) {
+    int reading = digitalRead(buttons[i].pin);
+    if (reading != buttons[i].lastReading) {
+      buttons[i].lastChange = millis();
+      buttons[i].lastReading = reading;
+    }
+    if (millis() - buttons[i].lastChange &gt;= 40) {
+      if (reading != buttons[i].stableState) {
+        buttons[i].stableState = reading;
+        if (buttons[i].stableState == LOW) {   // pressed = LOW
+          sendBLE(buttons[i].command);
+          Serial.println("Button pressed: " + String(buttons[i].command));
+        }
+      }
+    }
+  }
+}
+
+class RoseServerCallbacks : public BLEServerCallbacks {
+  void onConnect(BLEServer *server) override {
+    deviceConnected = true;
+    Serial.println("Rose AI connected");
+  }
+  void onDisconnect(BLEServer *server) override {
+    deviceConnected = false;
+    Serial.println("Rose AI disconnected");
+    BLEDevice::startAdvertising();
+  }
+};
+
+class RoseCharacteristicCallbacks : public BLECharacteristicCallbacks {
+  void onWrite(BLECharacteristic *characteristic) override {
+    String received = String(characteristic-&gt;getValue().c_str());
+    received.trim();
+    Serial.println("Rose AI received: " + received);
+  }
+};
+
+void setup() {
+  Serial.begin(115200);
+  delay(500);
+
+  pinMode(TRIG_PIN, OUTPUT);
+  pinMode(ECHO_PIN, INPUT);
+  digitalWrite(TRIG_PIN, LOW);
+
+  for (int i = 0; i &lt; BUTTON_COUNT; i++) {
+    pinMode(buttons[i].pin, INPUT_PULLUP);
+    buttons[i].lastReading = digitalRead(buttons[i].pin);
+    buttons[i].stableState = buttons[i].lastReading;
+  }
+
+  BLEDevice::init(DEVICE_NAME);
+  BLEServer *server = BLEDevice::createServer();
+  server-&gt;setCallbacks(new RoseServerCallbacks());
+
+  BLEService *service = server-&gt;createService(SERVICE_UUID);
+  pCharacteristic = service-&gt;createCharacteristic(
+    CHARACTERISTIC_UUID,
+    BLECharacteristic::PROPERTY_READ |
+    BLECharacteristic::PROPERTY_WRITE |
+    BLECharacteristic::PROPERTY_NOTIFY
+  );
+  pCharacteristic-&gt;addDescriptor(new BLE2902());
+  pCharacteristic-&gt;setCallbacks(new RoseCharacteristicCallbacks());
+  pCharacteristic-&gt;setValue("Rose AI Ready");
+  service-&gt;start();
+
+  BLEAdvertising *advertising = BLEDevice::getAdvertising();
+  advertising-&gt;addServiceUUID(SERVICE_UUID);
+  advertising-&gt;setScanResponse(true);
+  BLEDevice::startAdvertising();
+
+  Serial.println("ROSE AI ESP32 READY");
+}
+
+void loop() {
+  checkButtons();
+  checkUltrasonic();
+  delay(5);
+}
+</code></pre>
+          </div>
+        </div>
+      </article>
+      <article class="project">
+        <h3>AI Trainer</h3>
+        <p>A website where you add your own images and train an AI model to recognise them. It is built for people who want to try computer vision without writing training code. The source code is open on GitHub.</p>
+        <a href="https://hemantkumar71002-del.github.io/AI-Trainer/">Open AI Trainer</a>
+      </article>
+      <article class="project">
+        <h3>Room Drive</h3>
+        <p>An Android app for sharing files inside a company, school or team. The admin creates a room and gives each person a user ID and password. Users sign in with that ID, open PDF, Word, PowerPoint and image files, and upload files if the admin allows it. One user ID works on one device at a time, the admin can remove any ID at any moment, and new files appear live on every connected device.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="certificates">
+    <h2>Training and certificates</h2>
+    <div class="projects">
+      <article class="project">
+        <h3>PCB Design</h3>
+        <p>PCB Design Course, completed 14 June 2026. Shows how a circuit becomes a real board.</p>
+      </article>
+      <article class="project">
+        <h3>VLSI</h3>
+        <p>VLSI Course, completed 14 June 2026. An introduction to how chips are designed.</p>
+      </article>
+    </div>
+    <p class="small">I have also completed Introduction to MS Excel (14 July 2026).</p>
+  </section>
+
+  <section id="contact">
+    <h2>Find me online</h2>
+    <ul class="links">
+      <li><a href="https://github.com/hemantkumar71002-del" rel="me">GitHub</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Hemant Kumar, electronics engineer and creator of Nancy AI and Rose AI.</div>
+</footer>
+<script>
+document.getElementById('copybtn').addEventListener('click', function () {
+  var btn = this;
+  var text = document.getElementById('espcode').textContent;
+  function done(ok) {
+    btn.textContent = ok ? 'Copied!' : 'Press and hold to copy';
+    setTimeout(function () { btn.textContent = 'Copy code'; }, 2000);
+  }
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(false); });
+  } else {
+    var ta = document.createElement('textarea');
+    ta.value = text; document.body.appendChild(ta); ta.select();
+    var ok = false;
+    try { ok = document.execCommand('copy'); } catch (e) {}
+    document.body.removeChild(ta); done(ok);
+  }
+});
+</script>
+<script>
+document.getElementById('esptoggle').addEventListener('click', function () {
+  var box = document.getElementById('espbox');
+  var open = box.hidden;
+  box.hidden = !open;
+  this.setAttribute('aria-expanded', String(open));
+  this.textContent = open ? 'Hide ESP32 code' : 'ESP32 code for Rose AI';
+  this.closest('.project').classList.toggle('wide', open);
+});
+</script>
+</body>
+</html>
